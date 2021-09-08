@@ -1,0 +1,129 @@
+:root{
+    --primary-color: rgb(28, 26, 133);
+    --secondary-color: rgb(94, 163, 195);
+    --triangle-height: 100px;
+}
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+.bg-primary{
+    background-color: var(--primary-color);
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+header{
+    background-color: var(--secondary-color);  
+    overflow: auto;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+header nav{
+    height: 100%;
+    float: right;
+}
+header nav ul{
+    list-style-type: none;
+    float: right;
+    padding: 1rem;
+    margin: 0;
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: limegreen;
+    padding: 1rem;
+    color:black;
+    margin: 0.5rem;
+}
+header nav ul li a:hover{
+    background-color: green;
+}
+.front-presentation{
+    background-image: url("images/front-bg-photo.webp");
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px -300px 200px black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 16 / 9;
+    padding-bottom: 150px;
+
+}
+.front-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+    margin-top: 1rem;
+}
+.profile-photo{
+    width:70%;
+}
+.circle{
+    border-radius: 50%;
+}
+.mt-1{
+    margin-top: 1rem;
+}
+.mx-1{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.py-3{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.text-center{
+    text-align: center;
+}
+.language-list{
+    display: inline-block;
+    padding-inline-start: 0;
+    text-align: start;
+}
+.text-white{
+    color: white;
+}
+.text-shadow-legibility{
+    text-shadow: 0px 0px 5px black;
+}
+.triangle-up{
+    width: 0;
+    height: 0;
+    border-top: var(--triangle-height) solid transparent;
+    border-right: 100vw solid var(--primary-color);
+    margin-top: -100px;
+}
+.triangle-down{
+    width: 0;
+    height: 0;
+    border-bottom: var(--triangle-height) solid transparent;
+    border-left: 100vw solid var(--primary-color);
+}
+
+@media (min-width: 800px){
+    .front-info-container{
+        flex-direction: row;
+        width:70%;
+        margin-top: var(--triangle-height);
+        margin-bottom: var(--triangle-height);
+    }
+    .front-presentation{
+        padding-bottom: 0px;
+    }
+    .profile-photo{
+        width:300px;
+    }
+}
