@@ -4,31 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustav Perssons Personliga Webbplats</title>
+    <link rel="stylesheet" href="spectre-0.5.9/dist/spectre.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="home.html">Hem</a>
-                </li>
-                <li>
-                    <a href="about.html">Om</a>
-                </li>
-                <li>
-                    <a href="contact.html">Kontakt</a>
-                </li>
-                <li>
-                    <a href="portfolio.html">Portfölj</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <header class="navbar bg-primary p-fixed">
+        <section class="navbar-section">
+          <a href="#" class="btn btn-link">Docs</a>
+          <a href="#" class="btn btn-link">Examples</a>
+        </section>
+        <section class="navbar-center">
+          <!-- centered logo or brand -->
+        </section>
+        <section class="navbar-section">
+          <a href="#" class="btn btn-link">Twitter</a>
+          <a href="#" class="btn btn-link">GitHub</a>
+        </section>
+      </header>
     <main>
         <div class="front-presentation">
             <div class="front-info-container">
-                <img class="profile-photo circle" src="images/profile-picture.webp">
+                <img class="profile-photo circle" src="images/profile-picture.webp" alt="Profilbild">
                 <div class="mx-1 text-white text-shadow-legibility">
                     <h1>Gustav Persson</h1>
                     <p class="mt-1">Systemarkitekt på Wismen Media AB. Studerar mjukvaruutveckling vid Jönköping University.</p>

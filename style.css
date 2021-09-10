@@ -10,43 +10,15 @@ body{
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
 }
-.bg-primary{
-    background-color: var(--primary-color);
-}
 *, *:before, *:after {
     box-sizing: border-box;
-}
-header{
-    background-color: var(--secondary-color);  
-    overflow: auto;
 }
 footer{
     display: flex;
     justify-content: center;
 }
-header nav{
-    height: 100%;
-    float: right;
-}
-header nav ul{
-    list-style-type: none;
-    float: right;
-    padding: 1rem;
-    margin: 0;
-}
-header nav ul li{
-    float: left;
-}
-header nav ul li a{
-    display: inline-block;
-    text-decoration: none;
-    background-color: limegreen;
-    padding: 1rem;
-    color:black;
-    margin: 0.5rem;
-}
-header nav ul li a:hover{
-    background-color: green;
+.bg-primary{
+    background-color: var(--primary-color) !important;
 }
 .front-presentation{
     background-image: url("images/front-bg-photo.webp");
