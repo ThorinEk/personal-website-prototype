@@ -1,11 +1,10 @@
 :root{
-    --primary-color: rgb(28, 26, 133);
+    --primary-color: #5655D9;
     --secondary-color: rgb(94, 163, 195);
     --triangle-height: 100px;
 }
 body{
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
@@ -17,21 +16,17 @@ footer{
     display: flex;
     justify-content: center;
 }
-.bg-primary{
-    background-color: var(--primary-color) !important;
-}
 .front-presentation{
     background-image: url("images/front-bg-photo.webp");
     background-size: cover;
     background-position: center;
-    box-shadow: inset 0px -300px 200px black;
+    box-shadow: inset 0px -400px 300px black;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     aspect-ratio: 16 / 9;
     padding-bottom: 150px;
-
 }
 .front-info-container{
     display: flex;
@@ -43,15 +38,33 @@ footer{
 .profile-photo{
     width:70%;
 }
-.circle{
-    border-radius: 50%;
+.w-100{
+    width: 100%;
 }
-.mt-1{
+.mt-3{
+    margin-top: 0.6rem;
+}
+.mt-4{
+    margin-top: 0.8rem;
+}
+.mt-5{
     margin-top: 1rem;
 }
-.mx-1{
+.mx-3{
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
+.mx-4{
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+.mx-5{
     margin-left: 1rem;
     margin-right: 1rem;
+}
+.my-3{
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
 }
 .py-3{
     padding-top: 3rem;
@@ -84,6 +97,15 @@ footer{
     border-bottom: var(--triangle-height) solid transparent;
     border-left: 100vw solid var(--primary-color);
 }
+.d-flex{
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
 
 @media (min-width: 800px){
     .front-info-container{
@@ -91,9 +113,6 @@ footer{
         width:70%;
         margin-top: var(--triangle-height);
         margin-bottom: var(--triangle-height);
-    }
-    .front-presentation{
-        padding-bottom: 0px;
     }
     .profile-photo{
         width:300px;

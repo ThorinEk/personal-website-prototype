@@ -5,47 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustav Perssons Personliga Webbplats</title>
     <link rel="stylesheet" href="spectre-0.5.9/dist/spectre.min.css">
+    <link rel="stylesheet" href="spectre-0.5.9/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="spectre-0.5.9/dist/spectre-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar bg-primary p-fixed">
-        <section class="navbar-section">
-          <a href="#" class="btn btn-link">Docs</a>
-          <a href="#" class="btn btn-link">Examples</a>
+    <header class="navbar bg-primary">
+        <section class="navbar-section my-2 hide-lg">
+            <a href="#" class="btn mx-2">Hem</a>
+            <a href="#" class="btn mx-2">Om</a>
+            <a href="#" class="btn mx-2">Kontakt</a>
+            <a href="#" class="btn mx-2">Portfölj</a>
+            <a href="#" class="btn mx-2">Pressmeddelanden</a>
+            <a href="#" class="btn mx-2">Utbildning</a>
         </section>
-        <section class="navbar-center">
-          <!-- centered logo or brand -->
-        </section>
-        <section class="navbar-section">
-          <a href="#" class="btn btn-link">Twitter</a>
-          <a href="#" class="btn btn-link">GitHub</a>
-        </section>
+        <div class="dropdown dropdown-right w-100 show-lg">
+            <button class="btn dropdown-toggle m-2" tabindex="0">Meny<i class="icon icon-caret"></i></button>
+            <ul class="menu text-left w-100">
+                <li class="menu-item text-primary">
+                  <a href="#dropdowns">Slack</a>
+                </li>
+              <li class="menu-item text-primary"><a href="#dropdowns">Hipchat</a></li>
+              <li class="menu-item text-primary"><a href="#dropdowns">Skype</a></li>
+            </ul>
+          </div>
       </header>
     <main>
         <div class="front-presentation">
-            <div class="front-info-container">
-                <img class="profile-photo circle" src="images/profile-picture.webp" alt="Profilbild">
-                <div class="mx-1 text-white text-shadow-legibility">
-                    <h1>Gustav Persson</h1>
-                    <p class="mt-1">Systemarkitekt på Wismen Media AB. Studerar mjukvaruutveckling vid Jönköping University.</p>
+            <div class="container mt-5">
+                <div class="columns mx-3">
+                    <div class="column col-7 col-md-12 col-mx-auto">
+                        <div class="columns">
+                            <div class="column col-5 col-md-10 col-mx-auto">
+                                <img class="s-circle img-responsive" src="images/profile-picture.webp" alt="Profilbild">
+                            </div>
+                            <div class="column col-7 col-md-12 text-white d-flex align-items-center">
+                                <div class="text-shadow-legibility">
+                                    <h1>Gustav Persson</h1>
+                                    <p>Systemarkitekt på Wismen Media AB. Studerar mjukvaruutveckling vid Jönköping University.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="triangle-up"></div>
-        <div class="bg-primary text-white py-3 text-center">
-            <h2>Språk</h2>
-            <ul class="language-list">
-                <li>C++</li>
-                <li>C#</li>
-                <li>PHP</li>
-                <li>NodeJS</li>
-                <li>Java</li>
-            </ul>
+        <div class="bg-primary text-white py-3">
+            <div class="container">
+                <div class="columns mx-3">
+                    <div class="column col-7 col-md-12 col-mx-auto text-center">
+                        <h2 class="mb-2">Om mig</h2>
+                        <p>Jag är en systemutvecklare som studerar på School Of Engineering vid Jönköping University samt arbetar på Wismen Media AB.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="triangle-down"></div>
     </main>
-    <footer>
-        <p>&copy; Gustav Persson 2021</p>
+    <footer class="bg-primary mt-5">
+        <div class="container mx-3 my-3">
+            <div class="columns">
+                <div class="column col-6 col-md-12 text-center">
+                    <p><i class="icon icon-mail mr-1"></i>E-post: gustav.persson@wismenmedia.se</p>
+                </div>
+                <div class="column col-6 col-md-12 text-center">
+                    <p><i class="icon icon-location mr-1"></i>Jönköping</p>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column col-12 text-center">
+                    <p>&copy; 2021</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
