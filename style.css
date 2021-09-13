@@ -6,15 +6,14 @@
 body{
     margin: 0;
 }
+main{
+    min-height: 100vh;
+}
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
 }
 *, *:before, *:after {
     box-sizing: border-box;
-}
-footer{
-    display: flex;
-    justify-content: center;
 }
 .front-presentation{
     background-image: url("images/front-bg-photo.webp");
@@ -26,7 +25,7 @@ footer{
     justify-content: center;
     align-items: center;
     aspect-ratio: 16 / 9;
-    padding-bottom: 150px;
+    padding-bottom: var(--triangle-height);
 }
 .front-info-container{
     display: flex;
@@ -34,6 +33,15 @@ footer{
     align-items: center;
     width:90%;
     margin-top: 1rem;
+}
+.p-3{
+    padding: 0.6rem;
+}
+.p-4{
+    padding: 0.8rem;
+}
+.p-5{
+    padding: 1rem;
 }
 .profile-photo{
     width:70%;
