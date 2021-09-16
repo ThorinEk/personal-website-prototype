@@ -225,7 +225,21 @@ a.social-media-link:hover{
     background-position: left;
     text-decoration: none;
 }
-
+.border{
+    border: 1px solid var(--color-dark);
+}
+a.press-release-widget{
+    color: white;
+    background-color: var(--color-dark);
+    background: linear-gradient(to left, var(--color-dark) 50%, var(--primary-color) 50%) right;
+    background-size: 200%;
+    transition: .15s ease-out;
+}
+a.press-release-widget:hover{
+    text-decoration: none;
+    color: white;
+    background-position: left;
+}
 @media (min-width: 800px){
     .front-info-container{
         flex-direction: row;
@@ -243,5 +257,25 @@ a.social-media-link:hover{
 @media (min-width: 1200px){
     .portfolio-grid{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 768px){
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 0.9rem;
+    }
+    h5{
+        font-size: 0.7rem;
+    }
+    h6{
+        font-size: 0.6rem;
     }
 }
