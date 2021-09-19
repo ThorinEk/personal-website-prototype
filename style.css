@@ -175,6 +175,9 @@ h1, h2, h3, h4, h5, h6, p{
 .justify-content-center{
     justify-content: center;
 }
+.justify-contend-end{
+    justify-content: end;
+}
 .align-items-center{
     align-items: center;
 }
