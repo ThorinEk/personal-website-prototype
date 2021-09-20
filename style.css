@@ -53,6 +53,15 @@ h1, h2, h3, h4, h5, h6, p{
 .p-5{
     padding: var(--size-5);
 }
+.m-3{
+    margin: var(--size-3);
+}
+.m-4{
+    margin: var(--size-4);
+}
+.m-5{
+    margin: var(--size-5);
+}
 .pb-3{
     padding-bottom: var(--size-3);
 }
@@ -186,7 +195,10 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .social-media-link{
     margin-bottom: var(--size-3);
-    background-color: rgb(29, 6, 104);
+    /*background-color: rgb(29, 6, 104);*/
+    background: linear-gradient(to left, var(--color-dark) 50%, var(--primary-color) 50%) right;
+    background-size: 200%;
+    transition: .15s ease-out;
 }
 .social-media-link p{
     color:white;
@@ -201,7 +213,7 @@ h1, h2, h3, h4, h5, h6, p{
 a.social-media-link:hover{
     color:rgb(29, 6, 104);
     transition: all 0.1s ease-in-out;
-    background-color:rgb(52, 79, 197);
+    background-position: left;
 }
 .social-media-link, .social-media-link:active, .social-media-link:hover, .social-media-link:focus{
     text-decoration: none;

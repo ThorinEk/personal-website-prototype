@@ -19,7 +19,7 @@
             <a href="education.html" class="btn mx-2">Utbildning</a>
         </section>
         <section class="navbar-section my-2 justify-contend-end">
-            <a href="admin/logout" class="btn mx-2">Logga ut</a>
+            <a href="../home.html" class="btn mx-2">Logga ut</a>
         </section>
         <div class="dropdown dropdown-right w-100 show-lg">
             <button class="btn dropdown-toggle m-2" tabindex="0">Meny<i class="icon icon-caret"></i></button>
@@ -35,8 +35,24 @@
         <div class="container mt-5">
             <div class="columns">
                 <div class="column col-7 col-md-11 col-mx-auto">
-                    <h1>Välkommen till adminpanelen!</h1>
-                    <p>Här kan du administrera resurser på webbplatsen.</p>
+                    <h1>Redigera projekt</h1>
+                    <form method="POST">
+                        <div class="columns mb-3">
+                            <div class="column col-6 col-md-12">
+                                <label class="form-label" for="projectName">Namn</label>
+                                <input class="form-input" type="text" id="projectName" name="projectName" placeholder="Namn" required>
+                            </div>
+                            <div class="column col-6 col-md-12">
+                                <label class="form-label" for="projectDate">Datum</label>
+                                <input class="form-input" type="date" id="projectDate" name="projectDate" placeholder="Name" required>
+                            </div>
+                        </div>
+                        <label class="form-label" for="projectDate">Bild</label>
+                        <input class="form-input" type="file" id="projectDate" name="projectDate" placeholder="Name">
+                        <label class="form-label" for="projectDescription">Beskrivning</label>
+                        <textarea class="form-input" rows="4" id="projectDescription" name="projectDescription" placeholder="Beskrivning" required></textarea>
+                        <button type="submit" class="btn mt-3">Uppdatera</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -46,7 +62,7 @@
         <div class="container">
             <div class="columns bg-dark p-2">
                 <div class="column col-12 text-center">
-                    <a class="btn mb-3" href="admin/login">Logga in - admin</a>
+                    <p class="mb-2">Administratörspanel</a>
                 </div>
             </div>
         </div>
